@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statement Activity</title>
+</head>
+<style>
+    body{
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size:85px;
+        font-family: Georgia, serif;
+        color: white;
+    }
+
+    .day{
+        margin-left: 50px;
+        margin-top: 100px;
+
+    }
+
+    .assassin{
+        
+        width: 30%;
+      height: 30%;
+      position: absolute;
+      right: 700px;
+      top: 500px;
+      bottom: 0;    
+    }
+    .assassin img{
+         position: absolute;
+        left: -55%;
+        top: 10%;
+        right: 10%;
+        transform: translate(-75%);
+      transition: left 3s ease;
+    }
+
+    .assassin:hover .ninja{
+        left: 75%;  
+    }
+</style>
+<body background="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/d96bb958-4e6c-4ce0-9447-fbe226fbbecf/dhlqcqe-a0cf53ec-0e34-44bd-8239-3efe1a45d781.jpg"> 
+    <div class="day">
+ <center>
+    <script type="text/javascript">
+        var a = parseInt(prompt("Input a number between 1 and 7. These numbers represent the days of the week. Enter your number: "));
+           document.write("12-ODED" + "<br>");
+           
+        switch(a){
+            case 1:
+                document.write("Your day is Monday");
+                break;
+
+                case 2:
+                document.write("Your day is Tuesday");
+                break;
+                
+                case 3:
+                document.write("Your day is Wednesday");
+                break;
+
+                case 4:
+                document.write("Your day is Thursday");
+                break;
+
+                case 5:
+                document.write("Your day is Friday");
+                break;
+
+                case 6:
+                document.write("Your day is Saturday");
+                break;
+
+                case 7:
+                document.write("Your day is Sunday");
+                break;
+
+                default:
+                    document.write("Enter Valid Input!");
+        }
+    </script>
+    </center>
+     </div>
+    <div class="assassin">
+     <img src="https://upload.wikimedia.org/wikipedia/en/5/50/AssassinsCreed-Yasuke.png" class="ninja" width="350" height="650" align="left">
+      </div>
+</body>
+</html>
